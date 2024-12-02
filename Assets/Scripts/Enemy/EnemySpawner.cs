@@ -24,7 +24,7 @@ public class EnemySpawner : MonoBehaviour
         if (spawnCooldown <= 0f)
         {
             SpawnEnemy();
-            spawnCooldown = spawnRate; // Zamanlayıcıyı sıfırla
+            spawnCooldown = spawnRate; 
             spawnRate = Mathf.Max(0.5f, spawnRate - difficultyIncreaseRate);
         }
     }
